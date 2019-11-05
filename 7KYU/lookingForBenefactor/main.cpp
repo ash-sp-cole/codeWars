@@ -15,7 +15,7 @@ int main()
     string word = "";
     string test ="hello my name isnt ashley";
     string str = test + " ";
-    
+    int count{};
     for (auto x : str)
     {
 
@@ -42,6 +42,14 @@ int main()
     }
     
 
-    cout << array.at(0);
+    string answer = array.at(0);
+
+    for (int i=0; i< answer.size(); i++) {
+
+           count++;
+
+
+    }
+    cout <<count;
     return 0;
 }
