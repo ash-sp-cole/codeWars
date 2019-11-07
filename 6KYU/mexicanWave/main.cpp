@@ -7,29 +7,28 @@
 using namespace std;
 
 int main () {
+vector <string> stringArray {" 1 3 4 15 4 1 9"};
+vector <int> numbers{};
+for (auto &s : stringArray) {
+    stringstream parser (s);
+    int x = 0;
+    parser >> x;
 
-string str = "hapoppyboi";
-string word{};
+    numbers.push_back(x);
 
-
-;
-
-vector <string> answer{};
-char k = {};
-
- // k = toupper(k);
-
-
-
-for (int  i = 0 ; i < str.size(); i++) {
-
-str[i] = toupper(str[i]);
 
 
 }
+int size = numbers.size();
+sort(numbers.begin(),numbers.end());
 
-answer.push_back(word);
-cout << answer.at(0);
+for (int i =0; i < size; i++) {
+    cout << numbers[i];
 
-    return 0;
+}
+
+
+
+
+
 }
