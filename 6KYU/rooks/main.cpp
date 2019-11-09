@@ -6,10 +6,18 @@ using namespace std;
 
 int main () {
 
-int diceRoll{};
-int position{};
 
-position += (diceRoll*2);
+// int n ={3};
+
+// for (int i =0;  i < n; i++){
+//     n = n * i;
+
+// }
+
+
+
+cout << "hi";
+
 
 
 
