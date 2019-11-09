@@ -6,6 +6,10 @@ using namespace std;
 
 int main () {
 
+int diceRoll{};
+int position{};
+
+position += (diceRoll*2);
 
 
 
