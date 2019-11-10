@@ -10,22 +10,26 @@ using namespace std;
 int main () {
 
 
-
-vector <vector<string>> reels {
-        reels[0] = {"Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"},
-        reels[1] = {"Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"},
-        reels[2] = {"Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"}
+vector <vector<string> > reels {
+         {"Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"},
+        {"Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"},
+         {"Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"}
 };
 
-vector <int> spins (3);
 
-for  (int i =0; i <spins.size();i++) {
-cin >> spins[i];
+vector <int> input{ 6,2,3};
+string result1{}, result2{}, result3{};
 
-}
+;
+
+result1= reels.at(0).at(input.at(0));
+result2= reels.at(1).at(input.at(1));
+result3= reels.at(2).at(input.at(2));
 
 
 
-cout << spins.at(0) << spins.at(1);
+cout << result1 << "\n" << result2 << " \n" << result3;
+
+
 return 0;
 }
