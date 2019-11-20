@@ -7,8 +7,12 @@
 using namespace std;
 
 int main () {
-string str {"hellooo"};
-cout << str;
+string first{"ash"};
+string second{"ashley"};
+
+
+cout << first << endl ;
+cout << second endl;
 
 
 
