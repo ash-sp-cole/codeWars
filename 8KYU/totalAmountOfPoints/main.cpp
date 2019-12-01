@@ -1,22 +1,22 @@
 #include<iostream>
 #include<vector>
 #include <algorithm>
-#include <numeric>      // std::accumulate
+#include <numeric>   
+#include <map> 
+  // std::accumulate
 using namespace std; 
 
 int main () {
 
-vector <int> group1 { 1,4,2};
-vector <int> group2 { 5,4,3};
+vector <int> values {1,2,3};
 
+for (int i = 0; i < values.size(); i++) {
 
- int totalOne = accumulate(group1.begin(),group1.end(),0);
+values[i] = values[i] * 2;
 
- int totalTwo = accumulate(group1.begin(),group1.end(),0);
+}
 
-int finalTotal = totalOne + totalTwo;
+cout << values.at(0) << values.at(1);
 
-
-cout <<  finalTotal;
     return 0;
 }
