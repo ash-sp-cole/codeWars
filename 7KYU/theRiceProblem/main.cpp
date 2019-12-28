@@ -1,67 +1,65 @@
-#include<iostream>
-#include<string>
-#include<vector>
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
+int searchBinary(int arr[], int size, int lookingFor);
 
-vector <int> checkZero(vector <int> &queue) {
+int main()
+{
 
-if (queue.at(0) == 0) {
+    vector<int> arr{1,2,3,4,5,6,7,8,9,10,11,12,13,14};
 
-queue.erase(queue.begin() +0);
+    int size = arr.size();
 
-}
-    return queue;
-}
+    int timesSearched{};
 
+    int lookingFor{};
 
- int checkFrontOFLine(vector <int> &queue , int &person) {
+        cout << " welco0me to bianry search , entyer what your lookign for" << endl;
 
-if (person == queue.at(0)) {
-
-    person--;
-    queue.push_back(person);
-}
-
-return  person;
-}
+        cin >> lookingFor;
 
 
-
-
-int main () {
-
-vector <int> queue{2,1,3,6,4};
-
-int position = queue.at(0);
-
-int person = queue.at(position);
-
-int waitTime{};
-
-queue.erase(queue.begin() +0);
-
-
-while (person > 0) {
-
-
-    checkZero(queue);
-
-    person--;
-    // checkFrontOFLine(queue,person);
-
-
-    waitTime++;
-
-cout << waitTime << endl;
-
-
-}
+    searchBinary(arr[],size,lookingFor);
 
 
 
 
 
     return 0;
+}
+
+int searchBinary(int arr[], int size, int lookingFor)
+{
+
+    int low = {0};
+
+    int high = size - 1;
+
+    int mid = (low + high) /2;
+
+
+
+if ( mid == lookingFor) {
+
+cout << " \n found your number ";
+return ( mid);
+
+}
+
+else  if (lookingFor < mid ) {
+
+    high = mid -1;
+}
+
+    else {
+
+            low = mid +1;
+
+    }
+
+return 0;
+
 }

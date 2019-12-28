@@ -1,23 +1,26 @@
 #include <iostream>
 #include <vector>
-
-
+#include<algorithm>
+#include <numeric> 
 
 using namespace std;
 
+int main()
+{
 
-int main () {
+    vector<int> golds{7, 3};
 
-vector <int> golds{1,4,3,6,7,5};
+   vector  <int> gnomeOne{};
+   vector  <int> gnomeTwo{};
 
-int gnomeOne{};
+    int rightsize = golds.size() - 1;
+    int leftCoin = golds.at(0);
 
-int gnomeTwo{};
+    int rightCoin = golds.at(rightsize);
 
-for (auto i: golds) {
-
-cout << i;
-
+    for (int i=0; i< golds.size(); i++ ){
+if (i >= rightsize ) {
+    gnomeOne.push_back(i);
 }
 
 
@@ -25,8 +28,15 @@ cout << i;
 
 
 
+    }
+
+
+
+
+
+        //////////////////////////////////////////////////////// second beggar
+    
 
 
     return 0;
 }
-
