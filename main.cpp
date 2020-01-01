@@ -30,9 +30,9 @@ while (low < high) {
 
 
 
-            if (target == arr[mid]) {
+            if (target == ar) {
 
-                cout << " value found at index :    " << mid << " value was    " << arr[mid];
+                cout << " value found at index :    " << mid << " value was  " << arr[mid];
                 break;
               
             }
